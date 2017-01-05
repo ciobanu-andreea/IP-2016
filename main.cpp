@@ -1,23 +1,97 @@
 #include <iostream>
+#include <graphics.h>
 
 using namespace std;
 
-long double lungime (long double n, char from , char to); //*
-long double arie (long double n, char from , char to);//*
-long double volum (long double n, char from , char to);//*
-long double timp (long double n, char from , char to); //*
-long double viteza (long double n, char from , char to);//*
-long double temperatura (long double n, char from , char to); //*
-long double masa (long double n, char from , char to); //*
-long double energie (long double n, char from , char to);//*
-long double presiune (long double n, char from , char to); //*
-long double densitate (long double n, char from , char to);//*
+int startPage;
+const char* start, *image;
+int coordX, coordY;
+
+
+void unitsPage();
+void do_actiune(int);
+int get_actiune(int, int);
+void Page1();
+void Page2();
+void Page3();
+void Page4();
+void Page5();
+void Page6();
+void Page7();
+void Page8();
+void Page9();
+void Page10();
+void Page11();
+
+long double lungime (long double n, char from , char to);
+long double arie (long double n, char from , char to);
+long double volum (long double n, char from , char to);
+long double timp (long double n, char from , char to);
+long double viteza (long double n, char from , char to);
+long double temperatura (long double n, char from , char to);
+long double masa (long double n, char from , char to);
+long double energie (long double n, char from , char to);
+long double presiune (long double n, char from , char to);
+long double densitate (long double n, char from , char to);
 long double combustibil (long double n, char from , char to);
 
 int main()
 {
 
+    startPage=initwindow(800, 600, "Convertor de unitati", 0, 0, false, true);
+    cleardevice();
+    unitsPage();
     return 0;
+}
+void unitsPage()
+{
+    int actiune_selectata;
+    cleardevice();
+    start="images/page.jpg";
+    readimagefile(start, 0, 0, 800, 600);
+    while(!ismouseclick(WM_LBUTTONDOWN))
+        {
+        delay(300);
+        getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+        actiune_selectata=get_actiune(coordX, coordY);
+        do_actiune (actiune_selectata);
+        }
+}
+int get_actiune(int x, int y)
+{
+
+    if(y>270&&y<295&&x>80&&x<200) return 1;
+    if(y>310&&y<330&&x>80&&x<200) return 2;
+    if(y>350&&y<370&&x>80&&x<200) return 3;
+    if(y>385&&y<400&&x>80&&x<200) return 4;
+
+    if(y>270&&y<295&&x>280&&x<400) return 5;
+    if(y>310&&y<330&&x>280&&x<450) return 6;
+    if(y>350&&y<370&&x>280&&x<400) return 7;
+    if(y>385&&y<400&&x>280&&x<400) return 8;
+
+    if(y>270&&y<295&&x>525&&x<650) return 9;
+    if(y>310&&y<330&&x>525&&x<650) return 10;
+    if(y>350&&y<370&&x>525&&x<800) return 11;
+
+     if(y>545&&y<575&&x>710&&x<750)return 12;
+
+}
+void do_actiune(int actiune_selectata)
+{
+    if(actiune_selectata==1) Page1();
+    if(actiune_selectata==2) Page2();
+    if(actiune_selectata==3) Page3();
+    if(actiune_selectata==4) Page4();
+    if(actiune_selectata==5) Page5();
+    if(actiune_selectata==6) Page6();
+    if(actiune_selectata==7)Page7();
+    if(actiune_selectata==8)Page8();
+    if(actiune_selectata==9)Page9();
+    if(actiune_selectata==10)Page10();
+    if(actiune_selectata==11)Page11();
+    if(actiune_selectata==12) closegraph();
+
 }
 long double lungime (long double n, char from , char to)
 {
