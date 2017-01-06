@@ -7,10 +7,14 @@ int startPage;
 const char* start, *image;
 int coordX, coordY;
 
+int unitate_1, unitate_2;
+long double valoare;
 
 void unitsPage();
 void do_actiune(int);
 int get_actiune(int, int);
+int get_unitate(int, int);
+long double get_valoare();
 void Page1();
 void Page2();
 void Page3();
@@ -92,6 +96,389 @@ void do_actiune(int actiune_selectata)
     if(actiune_selectata==11)Page11();
     if(actiune_selectata==12) closegraph();
 
+}
+void Page1()
+{
+    cleardevice();
+    image="images/page1.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<lungime(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page2()
+{
+    cleardevice();
+    image="images/page2.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<arie(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page3()
+{
+    cleardevice();
+    image="images/page3.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<volum(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page4()
+{
+    cleardevice();
+    image="images/page4.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<timp(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page5()
+{
+    cleardevice();
+    image="images/page5.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<viteza(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page6()
+{
+    cleardevice();
+    image="images/page6.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<temperatura(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page7()
+{
+    cleardevice();
+    image="images/page7.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<masa(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page8()
+{
+    cleardevice();
+    image="images/page8.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<energie(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page9()
+{
+    cleardevice();
+    image="images/page9.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<presiune(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page10()
+{
+    cleardevice();
+    image="images/page10.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<densitate(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+void Page11()
+{
+    cleardevice();
+    image="images/page11.jpg";
+    readimagefile(image, 0, 0, 800, 600);
+    while(1)
+    {
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_1=get_unitate(coordX, coordY);
+            break;
+            }
+        valoare=get_valoare();
+        bgiout<<fixed<<valoare;
+        setbkcolor(WHITE); setcolor(BLACK);
+        outstreamxy(300, 423);
+        while(1)
+        if(ismouseclick(WM_LBUTTONDOWN))
+            {
+            getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
+            unitate_2=get_unitate(coordX, coordY);
+            break;
+            }
+    bgiout<<fixed<<combustibil(valoare, unitate_1, unitate_2);
+    setbkcolor(WHITE); setcolor(BLACK);
+    outstreamxy(230, 550);
+    }
+}
+int get_unitate(int x, int y)
+{
+    if(y>330&&y<390&&x>30&&x<90) return 1;
+    if(y>470&&y<530&&x>30&&x<90) return 1;
+
+    if(y>330&&y<390&&x>110&&x<170) return 2;
+    if(y>470&&y<530&&x>110&&x<170) return 2;
+
+    if(y>330&&y<390&&x>190&&x<250) return 3;
+    if(y>470&&y<530&&x>190&&x<250) return 3;
+
+    if(y>330&&y<390&&x>270&&x<330) return 4;
+    if(y>470&&y<530&&x>270&&x<330) return 4;
+
+    if(y>330&&y<390&&x>345&&x<405) return 5;
+    if(y>470&&y<530&&x>345&&x<405) return 5;
+
+    if(y>330&&y<390&&x>425&&x<485) return 6;
+    if(y>470&&y<530&&x>425&&x<485) return 6;
+
+    if(y>330&&y<390&&x>505&&x<565) return 7;
+    if(y>470&&y<530&&x>505&&x<565) return 7;
+
+    if(y>330&&y<390&&x>585&&x<645) return 8;
+    if(y>470&&y<530&&x>585&&x<645) return 8;
+
+    if(y>330&&y<390&&x>665&&x<725) return 9;
+    if(y>470&&y<530&&x>665&&x<725) return 9;
+
+    if(y>330&&y<390&&x>745&&x<799) return 10;
+    if(y>470&&y<530&&x>745&&x<799) return 10;
+
+    if(y>545&&y<580&&x>710&&x<780) unitsPage();
+    if(y>545&&y<585&&x>655&&x<700){
+        bgiout<<"                                         "; setbkcolor(WHITE);outstreamxy(300, 423);
+        bgiout<<"                                         "; setbkcolor(WHITE);outstreamxy(230, 550);}
+
+}
+long double get_valoare()
+{
+    int x; long double val, aux; int ok, p10;
+    val=0; ok=0; p10=10;
+    x=getch(); val=x-'0'; x=getch();
+    while(x!=13)
+        {
+        if(x!=46 && ok==0) {val=val*10+x-'0'; x=getch();}
+        else
+            if(x==46) {ok=1; x=getch();}
+                else
+                if(x!=46 && ok==1) {val= val+(long double)(x-'0')/p10; p10=p10*10; x=getch();}
+        }
+    return val;
 }
 long double lungime (long double n, char from , char to)
 {
