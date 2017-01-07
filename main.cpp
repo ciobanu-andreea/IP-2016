@@ -58,7 +58,8 @@ void unitsPage()
         delay(300);
         getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
         actiune_selectata=get_actiune(coordX, coordY);
-        do_actiune (actiune_selectata);
+        if(actiune_selectata!=13)
+            do_actiune (actiune_selectata);
         }
 }
 int get_actiune(int x, int y)
@@ -79,6 +80,7 @@ int get_actiune(int x, int y)
     if(y>350&&y<370&&x>525&&x<800) return 11;
 
      if(y>545&&y<575&&x>710&&x<750)return 12;
+     return 13;
 
 }
 void do_actiune(int actiune_selectata)
@@ -109,18 +111,20 @@ void Page1()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<lungime(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -139,18 +143,20 @@ void Page2()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<arie(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -169,18 +175,20 @@ void Page3()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<volum(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -199,18 +207,20 @@ void Page4()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<timp(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -229,18 +239,20 @@ void Page5()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<viteza(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -259,18 +271,20 @@ void Page6()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<temperatura(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -289,18 +303,20 @@ void Page7()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<masa(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -319,18 +335,20 @@ void Page8()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<energie(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -349,18 +367,20 @@ void Page9()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<presiune(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -379,18 +399,20 @@ void Page10()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<densitate(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -409,18 +431,20 @@ void Page11()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
-            break;
+            if(unitate_1!=13)
+                break;
             }
         valoare=get_valoare();
         bgiout<<fixed<<valoare;
         setbkcolor(WHITE); setcolor(BLACK);
-        outstreamxy(300, 423);
+        outstreamxy(300, 422);
         while(1)
         if(ismouseclick(WM_LBUTTONDOWN))
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
-            break;
+            if(unitate_2!=13)
+                break;
             }
     bgiout<<fixed<<combustibil(valoare, unitate_1, unitate_2);
     setbkcolor(WHITE); setcolor(BLACK);
@@ -460,10 +484,7 @@ int get_unitate(int x, int y)
     if(y>470&&y<530&&x>745&&x<799) return 10;
 
     if(y>545&&y<580&&x>710&&x<780) unitsPage();
-    if(y>545&&y<585&&x>655&&x<700){
-        bgiout<<"                                         "; setbkcolor(WHITE);outstreamxy(300, 423);
-        bgiout<<"                                         "; setbkcolor(WHITE);outstreamxy(230, 550);}
-
+    return 13;
 }
 long double get_valoare()
 {
@@ -580,7 +601,7 @@ long double timp (long double n, char from , char to)
     if(from!=2 && to!=2) {x=timp(n, from, 2); x=timp(x, 2, to); return x;}
     if(to==2)
         {
-        if(from==1) return n*0.1666666;
+        if(from==1) return n*0.0166667;
         if(from==3) return n*60;
         if(from==4) return n*10080;
         if(from==5) return n*43800;
@@ -591,7 +612,7 @@ long double timp (long double n, char from , char to)
     if(from==2)
         {
         if(to==1) return n*60;
-        if(to==3) return n*0.0166666;
+        if(to==3) return n*0.0166667;
         if(to==4) return n*0.0000992;
         if(to==5) return n*0.0000228;
         if(to==6) return n*0.0000019;
@@ -740,12 +761,12 @@ long double combustibil (long double n, char from , char to)
     if(from!=1 && to!=1) {x=combustibil(n, from, 1); x=combustibil(x, 1, to); return x;}
     if(to==1)
         {
-        if(from==2) return n*100;
-        if(from==3) return n*235.2145833;
+        if(from==2) return 100*1/n;
+        if(from==3) return 235.2145833/n;
         }
     if(from==1)
         {
-        if(to==2) return n*100;
-        if(to==3) return n*235.2145833;
+        if(to==2) return 100*1/n;
+        if(to==3) return 282.48093628/n;
         }
 }
