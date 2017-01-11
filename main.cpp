@@ -55,7 +55,7 @@ void unitsPage()
     readimagefile(start, 0, 0, 800, 600);
     while(!ismouseclick(WM_LBUTTONDOWN))
         {
-        delay(300);
+        delay (300);
         getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
         actiune_selectata=get_actiune(coordX, coordY);
         if(actiune_selectata!=13)
@@ -111,6 +111,8 @@ void Page1()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page1();
             if(unitate_1!=13)
                 break;
             }
@@ -123,6 +125,8 @@ void Page1()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page1();
             if(unitate_2!=13)
                 break;
             }
@@ -143,6 +147,8 @@ void Page2()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page2();
             if(unitate_1!=13)
                 break;
             }
@@ -155,6 +161,8 @@ void Page2()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page2();
             if(unitate_2!=13)
                 break;
             }
@@ -175,6 +183,8 @@ void Page3()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page3();
             if(unitate_1!=13)
                 break;
             }
@@ -187,6 +197,8 @@ void Page3()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page3();
             if(unitate_2!=13)
                 break;
             }
@@ -207,6 +219,8 @@ void Page4()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page4();
             if(unitate_1!=13)
                 break;
             }
@@ -219,6 +233,8 @@ void Page4()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page4();
             if(unitate_2!=13)
                 break;
             }
@@ -239,6 +255,8 @@ void Page5()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page5();
             if(unitate_1!=13)
                 break;
             }
@@ -251,6 +269,8 @@ void Page5()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page5();
             if(unitate_2!=13)
                 break;
             }
@@ -271,6 +291,8 @@ void Page6()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page6();
             if(unitate_1!=13)
                 break;
             }
@@ -283,6 +305,8 @@ void Page6()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page6();
             if(unitate_2!=13)
                 break;
             }
@@ -303,6 +327,8 @@ void Page7()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page7();
             if(unitate_1!=13)
                 break;
             }
@@ -315,6 +341,8 @@ void Page7()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page7();
             if(unitate_2!=13)
                 break;
             }
@@ -335,6 +363,8 @@ void Page8()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page8();
             if(unitate_1!=13)
                 break;
             }
@@ -347,6 +377,8 @@ void Page8()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page8();
             if(unitate_2!=13)
                 break;
             }
@@ -367,6 +399,8 @@ void Page9()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page9();
             if(unitate_1!=13)
                 break;
             }
@@ -379,6 +413,8 @@ void Page9()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page9();
             if(unitate_2!=13)
                 break;
             }
@@ -399,6 +435,8 @@ void Page10()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page10();
             if(unitate_1!=13)
                 break;
             }
@@ -411,6 +449,8 @@ void Page10()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page10();
             if(unitate_2!=13)
                 break;
             }
@@ -431,6 +471,8 @@ void Page11()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_1=get_unitate(coordX, coordY);
+            if(unitate_1==11)
+                Page11();
             if(unitate_1!=13)
                 break;
             }
@@ -443,6 +485,8 @@ void Page11()
             {
             getmouseclick(WM_LBUTTONDOWN,coordX,coordY);
             unitate_2=get_unitate(coordX, coordY);
+            if(unitate_2==11)
+                Page11();
             if(unitate_2!=13)
                 break;
             }
@@ -484,20 +528,31 @@ int get_unitate(int x, int y)
     if(y>470&&y<530&&x>745&&x<799) return 10;
 
     if(y>545&&y<580&&x>710&&x<780) unitsPage();
+    if(y>545&&y<585&&x>655&&x<700) return 11;
     return 13;
 }
 long double get_valoare()
 {
-    int x; long double val, aux; int ok, p10;
-    val=0; ok=0; p10=10;
-    x=getch(); val=x-'0'; x=getch();
+    int x; long double val, aux; int ok, p10; bool cifra;
+    val=0; ok=0; p10=10; cifra=false;
+    while(cifra==false)
+        {
+        x=getch();
+        if(x>=48 && x<=57)
+            {val=x-'0'; cifra=true;}
+        x=getch();
+        }
     while(x!=13)
         {
-        if(x!=46 && ok==0) {val=val*10+x-'0'; x=getch();}
-        else
-            if(x==46) {ok=1; x=getch();}
-                else
-                if(x!=46 && ok==1) {val= val+(long double)(x-'0')/p10; p10=p10*10; x=getch();}
+        if((x>='0'&&x<='9') || (x=='.'))
+            {
+            if(x!=46 && ok==0) {val=val*10+x-'0'; x=getch();}
+            else
+                if(x==46) {ok=1; x=getch();}
+                    else
+                    if(x!=46 && ok==1) {val= val+(long double)(x-'0')/p10; p10=p10*10; x=getch();}
+            }
+        else x=getch();
         }
     return val;
 }
