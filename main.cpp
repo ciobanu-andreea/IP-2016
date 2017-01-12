@@ -540,6 +540,8 @@ long double get_valoare()
         x=getch();
         if(x>=48 && x<=57)
             {val=x-'0'; cifra=true;}
+        else
+            if(x==46) {val=0; ok=1; cifra=true;}
         x=getch();
         }
     while(x!=13)
