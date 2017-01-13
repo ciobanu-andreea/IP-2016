@@ -497,35 +497,35 @@ void Page11()
 }
 int get_unitate(int x, int y)
 {
-    if(y>330&&y<390&&x>30&&x<90) return 1;
-    if(y>470&&y<530&&x>30&&x<90) return 1;
+    if(y>330&&y<390&&x>30&&x<90) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(58, 332); return 1;}
+    if(y>470&&y<530&&x>30&&x<90) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(58, 477); return 1;}
 
-    if(y>330&&y<390&&x>110&&x<170) return 2;
-    if(y>470&&y<530&&x>110&&x<170) return 2;
+    if(y>330&&y<390&&x>110&&x<170) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(138, 332); return 2;}
+    if(y>470&&y<530&&x>110&&x<170) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(138, 477); return 2;}
 
-    if(y>330&&y<390&&x>190&&x<250) return 3;
-    if(y>470&&y<530&&x>190&&x<250) return 3;
+    if(y>330&&y<390&&x>190&&x<250) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(218, 332); return 3;}
+    if(y>470&&y<530&&x>190&&x<250) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(218, 477); return 3;}
 
-    if(y>330&&y<390&&x>270&&x<330) return 4;
-    if(y>470&&y<530&&x>270&&x<330) return 4;
+    if(y>330&&y<390&&x>270&&x<330) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(295, 332); return 4;}
+    if(y>470&&y<530&&x>270&&x<330) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(295, 477); return 4;}
 
-    if(y>330&&y<390&&x>345&&x<405) return 5;
-    if(y>470&&y<530&&x>345&&x<405) return 5;
+    if(y>330&&y<390&&x>345&&x<405) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(375, 332); return 5;}
+    if(y>470&&y<530&&x>345&&x<405) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(375, 477); return 5;}
 
-    if(y>330&&y<390&&x>425&&x<485) return 6;
-    if(y>470&&y<530&&x>425&&x<485) return 6;
+    if(y>330&&y<390&&x>425&&x<485) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(455, 332); return 6;}
+    if(y>470&&y<530&&x>425&&x<485) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(455, 477); return 6;}
 
-    if(y>330&&y<390&&x>505&&x<565) return 7;
-    if(y>470&&y<530&&x>505&&x<565) return 7;
+    if(y>330&&y<390&&x>505&&x<565) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(533, 332); return 7;}
+    if(y>470&&y<530&&x>505&&x<565) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(533, 477); return 7;}
 
-    if(y>330&&y<390&&x>585&&x<645) return 8;
-    if(y>470&&y<530&&x>585&&x<645) return 8;
+    if(y>330&&y<390&&x>585&&x<645) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(610, 332); return 8;}
+    if(y>470&&y<530&&x>585&&x<645) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(610, 477); return 8;}
 
-    if(y>330&&y<390&&x>665&&x<725) return 9;
-    if(y>470&&y<530&&x>665&&x<725) return 9;
+    if(y>330&&y<390&&x>665&&x<725) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(690, 332); return 9;}
+    if(y>470&&y<530&&x>665&&x<725) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(690, 477); return 9;}
 
-    if(y>330&&y<390&&x>745&&x<799) return 10;
-    if(y>470&&y<530&&x>745&&x<799) return 10;
+    if(y>330&&y<390&&x>745&&x<799) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(770, 477); return 10;}
+    if(y>470&&y<530&&x>745&&x<799) {bgiout<<"x"; setbkcolor(WHITE); setcolor(BLACK); outstreamxy(770, 477); return 10;}
 
     if(y>545&&y<580&&x>710&&x<780) unitsPage();
     if(y>545&&y<585&&x>655&&x<700) return 11;
